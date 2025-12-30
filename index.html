@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Script Community Hub</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0b0b0f, #14141c);
+    color: #e5e7eb;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  @keyframes glow {
+    0%,100% { text-shadow: 0 0 6px rgba(168,85,247,.4); }
+    50% { text-shadow: 0 0 20px rgba(168,85,247,.9); }
+  }
+  .neon { animation: glow 3s ease-in-out infinite; }
+
+  nav a {
+    margin: 0 0.75rem;
+    font-weight: 600;
+    color: #a855f7;
+    text-decoration: none;
+  }
+  nav a:hover { text-decoration: underline; }
+
+  .btn {
+    display: block;
+    padding: 0.85rem 1.6rem;
+    border-radius: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: .25s ease;
+    margin: 0.5rem auto;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(255,255,255,.35);
+  }
+
+  .card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 40px rgba(168,85,247,0.18);
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 60px rgba(168,85,247,0.5);
+  }
+
+  /* ロゴ中サイズ */
+  .logo-main {
+    max-width: 120px;
+    width: 25vw;
+    margin-bottom: 1rem;
+    pointer-events: none;
+  }
+
+  .text-small { font-size: 0.875rem; }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="text-center py-4 bg-gray-900/20 backdrop-blur-md sticky top-0 z-50">
+  <a href="#home">HOME</a>
+  <a href="#scripts">Scripts</a>
+  <a href="#executors">Executors</a>
+  <a href="#tools">External Tools</a>
+  <a href="#powershell">ExecutionPolicy</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="card">
+
+  <!-- Logo / Character -->
+  <img
+    src="https://elements-resized.envatousercontent.com/elements-cover-images/14cd16f1-583e-401b-9786-033155c0ba92?w=2038&cf_fit=scale-down&q=85&format=auto&s=17da68c524e21cd97fe101453e403baa237754c5375826fdf1cef6aebeed350c"
+    alt="Site Logo"
+    class="logo-main mx-auto"
+  >
+
+  <h1 class="text-4xl font-bold neon mb-3">SCRIPT HUB</h1>
+  <p class="text-gray-300 text-sm mb-4">
+    参加するだけでOK。知識がなくても大丈夫。見るだけ・聞くだけでも歓迎。
+  </p>
+
+  <a class="btn" style="background:linear-gradient(90deg,#22c55e,#10b981)"
+     href="https://line.me/ti/g2/ctACQKVIXgkV5Hp0U5qESr3dGxIo-cuqx95cuQ"
+     target="_blank">
+    LINE オープンチャット
+  </a>
+
+  <a class="btn" style="background:linear-gradient(90deg,#6366f1,#ec4899)"
+     href="https://discord.gg/y3phEYyy"
+     target="_blank">
+    Discord サーバー
+  </a>
+
+  <p class="text-gray-300 leading-relaxed mt-4">
+    Script Community Hub は、情報共有・学習・イベント案内・最新アップデートをまとめる
+    コミュニティポータルです。初心者から上級者まで歓迎します！
+  </p>
+</section>
+
+<!-- Scripts -->
+<section id="scripts" class="card">
+  <h2 class="text-2xl font-bold text-pink-400 mb-4">Scripts 情報</h2>
+  <div class="space-y-4">
+    <div class="card bg-purple-900/20 hover:bg-purple-800/40">
+      AutoFarm Script - 自動でマネーやアイテムを稼ぐ
+    </div>
+    <div class="card bg-blue-900/20 hover:bg-blue-800/40">
+      ESP / AimBot Script - 敵位置表示・照準補助
+    </div>
+    <div class="card bg-green-900/20 hover:bg-green-800/40">
+      便利機能 Script - 移動速度・ジャンプ高変更
+    </div>
+  </div>
+</section>
+
+<!-- Executors -->
+<section id="executors" class="card">
+  <h2 class="text-2xl font-bold text-pink-400 mb-4">Executors 情報</h2>
+  <div class="space-y-4">
+    <div class="card bg-purple-900/20 hover:bg-purple-800/40">Delta (iOS/Android) – モバイル向け、署名注意</div>
+    <div class="card bg-blue-900/20 hover:bg-blue-800/40">Krnl – 運営停止中、復活後は整合性注意</div>
+    <div class="card bg-green-900/20 hover:bg-green-800/40">PC Executors – Xeno, Solara, Swift, Velocity, Potassium, Bunni, Volcano</div>
+  </div>
+</section>
+
+<!-- External Tools -->
+<section id="tools" class="card">
+  <h2 class="text-2xl font-bold text-pink-400 mb-4">External Tools</h2>
+  <div class="space-y-4">
+    <div class="card bg-purple-900/20 hover:bg-purple-800/40">
+      🔗 <a href="https://techybuff.com/esign/" target="_blank" class="underline">E-sign サイト</a>
+    </div>
+    <div class="card bg-blue-900/20 hover:bg-blue-800/40">
+      🔗 <a href="https://khoindvn.io.vn/" target="_blank" class="underline">k-esign サイト</a>
+    </div>
+    <div class="card bg-green-900/20 hover:bg-green-800/40">
+      🔗 <a href="https://www.mediafire.com/file/i4p17hpjm8q81jc/Delta-2.701.ipa/file" target="_blank" class="underline">Delta IPA ダウンロード</a>
+    </div>
+    <div class="card bg-pink-900/20 hover:bg-pink-800/40">
+      🔗 <a href="https://www.kerno.io/?rdt_cid=5693410631450031052&utm_source=reddit" target="_blank" class="underline">Kerno.io</a>
+      <p class="text-gray-300 text-small mt-1">
+        在庫更新用スクリプトの説明、Googleシートへのコピーなど公式説明文
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ExecutionPolicy -->
+<section id="powershell" class="card">
+  <h2 class="text-2xl font-bold text-pink-400 mb-4">ExecutionPolicy バイパス（説明用）</h2>
+  <p class="text-gray-300 leading-relaxed">
+    PowerShell スクリプトを実行できない場合は、管理者として起動し ExecutionPolicy を一時的に変更することで対応できます。一例の手順はこちら：
+  </p>
+  <ul class="list-disc ml-5 text-gray-300">
+    <li>スタートメニューで PowerShell を検索</li>
+    <li>右クリック → 管理者として実行</li>
+    <li>ローカル管理者資格情報を入力</li>
+    <li><code>Set-ExecutionPolicy RemoteSigned</code> を入力して実行</li>
+    <li>終了後 <code>Set-ExecutionPolicy Restricted</code> に戻す</li>
+  </ul>
+  <p class="text-gray-300 text-small mt-2">
+    ※ 説明用で、実際のコード提供はありません。自己責任で操作してください。
+  </p>
+</section>
+
+</body>
+</html>
